@@ -1,0 +1,1077 @@
+[
+    {
+        "id": "2e741d819ed9685d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eb176dd253d9c3a2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a6205d8027e4353e",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6498f90559c51077",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c4032b066ea727b9",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7740893b8f029955",
+        "type": "s7comm",
+        "ip": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "payload": [
+            {
+                "S7_Type": "Q",
+                "S7_DBnum": "1",
+                "S7_Datatype": "X",
+                "S7_Offset": "0",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "DATA1"
+            }
+        ]
+    },
+    {
+        "id": "90ba78535d7b24ce",
+        "type": "s7comm",
+        "ip": "127.0.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "payload": [
+            {
+                "S7_Type": "DB",
+                "S7_DBnum": "1",
+                "S7_Datatype": "W",
+                "S7_Offset": "0",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "DATA1"
+            }
+        ]
+    },
+    {
+        "id": "5bced488c636d4be",
+        "type": "ui_tab",
+        "name": "NEW DASHBOARD",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6553f25b00dbc9b1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d174cda83bcaff5c",
+        "type": "ui_group",
+        "name": "ENABLE COUNTER12",
+        "tab": "6acb8c4d732ea07b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7937646dca7460e7",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "50",
+        "timeout": "3000",
+        "name": "PLC S7-1500 CPU 1515-2PN",
+        "vartable": [
+            {
+                "addr": "Q0.0",
+                "name": "input pin 0"
+            }
+        ]
+    },
+    {
+        "id": "6acb8c4d732ea07b",
+        "type": "ui_tab",
+        "name": "GROUP2",
+        "icon": "dashboard2",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "92bb65d6e6483e5e",
+        "type": "postgreSQLConfig",
+        "name": "Tempdb",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "Temp",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "postgres",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "20ae1e52d1eef983",
+        "type": "postgreSQLConfig",
+        "name": "myuser@timescale:5432/iot",
+        "host": "timescale",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "iot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "myuser",
+        "userFieldType": "str",
+        "password": "???",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "4472f872719fda9c",
+        "type": "inject",
+        "z": "2e741d819ed9685d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "db2d7b59fc1554eb"
+            ]
+        ]
+    },
+    {
+        "id": "bd2dfc86dc1f416f",
+        "type": "inject",
+        "z": "2e741d819ed9685d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":[12473]}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "654ae38adc8ab333"
+            ]
+        ]
+    },
+    {
+        "id": "db2d7b59fc1554eb",
+        "type": "s7comm read",
+        "z": "2e741d819ed9685d",
+        "connection": "7740893b8f029955",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"1\",\"S7_Datatype\":\"W\",\"S7_Offset\":\"0\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"DATA1\"}",
+        "s7Name": "DATA1",
+        "topic": "",
+        "name": "",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "0d6cfaf1313ad227",
+                "9f6eb8482cd4cad8"
+            ]
+        ]
+    },
+    {
+        "id": "654ae38adc8ab333",
+        "type": "s7comm write",
+        "z": "2e741d819ed9685d",
+        "connection": "90ba78535d7b24ce",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"1\",\"S7_Datatype\":\"W\",\"S7_Offset\":\"0\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"DATA1\"}",
+        "s7Name": "DATA1",
+        "topic": "",
+        "name": "",
+        "signalSetted": false,
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "cf685ab2af9ebd29"
+            ]
+        ]
+    },
+    {
+        "id": "0d6cfaf1313ad227",
+        "type": "debug",
+        "z": "2e741d819ed9685d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cf685ab2af9ebd29",
+        "type": "debug",
+        "z": "2e741d819ed9685d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9f6eb8482cd4cad8",
+        "type": "file",
+        "z": "2e741d819ed9685d",
+        "name": "",
+        "filename": "C:\\Users\\neeli\\Desktop\\op",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 730,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba0eb4fd2027a5b3",
+        "type": "inject",
+        "z": "eb176dd253d9c3a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "a1c107ab75ad64d3"
+            ]
+        ]
+    },
+    {
+        "id": "6d5681d513b91c85",
+        "type": "inject",
+        "z": "eb176dd253d9c3a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":[12473]}",
+        "payloadType": "json",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "af241ffbeb259745"
+            ]
+        ]
+    },
+    {
+        "id": "a1c107ab75ad64d3",
+        "type": "s7comm read",
+        "z": "eb176dd253d9c3a2",
+        "connection": "7740893b8f029955",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"1\",\"S7_Datatype\":\"W\",\"S7_Offset\":\"0\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"DATA1\"}",
+        "s7Name": "DATA1",
+        "topic": "",
+        "name": "",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "03c7dfb220f0c921"
+            ]
+        ]
+    },
+    {
+        "id": "af241ffbeb259745",
+        "type": "s7comm write",
+        "z": "eb176dd253d9c3a2",
+        "connection": "90ba78535d7b24ce",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"1\",\"S7_Datatype\":\"W\",\"S7_Offset\":\"0\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"DATA1\"}",
+        "s7Name": "DATA1",
+        "topic": "",
+        "name": "",
+        "signalSetted": false,
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "ad43f9b2f042b064"
+            ]
+        ]
+    },
+    {
+        "id": "03c7dfb220f0c921",
+        "type": "debug",
+        "z": "eb176dd253d9c3a2",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ad43f9b2f042b064",
+        "type": "debug",
+        "z": "eb176dd253d9c3a2",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e8a7f2b8c24824b2",
+        "type": "ui_button",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "group": "d174cda83bcaff5c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ENABLE COUNTER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "BLUE",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "e2d4d53c680a3625"
+            ]
+        ]
+    },
+    {
+        "id": "e2d4d53c680a3625",
+        "type": "s7 out",
+        "z": "a6205d8027e4353e",
+        "endpoint": "7937646dca7460e7",
+        "variable": "",
+        "name": "",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a7cd3c1c749dc8e8",
+        "type": "ui_button",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "group": "d174cda83bcaff5c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DISABLE COUNTER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "RED",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "e2d4d53c680a3625"
+            ]
+        ]
+    },
+    {
+        "id": "b58a1a6afb666529",
+        "type": "ui_gauge",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "group": "d174cda83bcaff5c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "COUNTER1",
+        "label": "1/S",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "250",
+        "seg2": "300",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3de578ce589700fd",
+        "type": "s7 in",
+        "z": "a6205d8027e4353e",
+        "endpoint": "7937646dca7460e7",
+        "mode": "single",
+        "variable": "COUNTER1 VALUE",
+        "diff": true,
+        "name": "",
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "b58a1a6afb666529",
+                "facc86e23aaed221"
+            ]
+        ]
+    },
+    {
+        "id": "de07a544d00879c5",
+        "type": "ui_button",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "group": "d174cda83bcaff5c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "RESET COUNTER1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "PINK",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 400,
+        "wires": [
+            [
+                "a39776a7c01639f7"
+            ]
+        ]
+    },
+    {
+        "id": "f01a9e36af4de7a1",
+        "type": "ui_button",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "group": "d174cda83bcaff5c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "RELEASE COUNTER1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "YELLOW",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "a39776a7c01639f7"
+            ]
+        ]
+    },
+    {
+        "id": "a39776a7c01639f7",
+        "type": "s7 out",
+        "z": "a6205d8027e4353e",
+        "endpoint": "7937646dca7460e7",
+        "variable": "RESET CMD1",
+        "name": "",
+        "x": 500,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "facc86e23aaed221",
+        "type": "file",
+        "z": "a6205d8027e4353e",
+        "name": "",
+        "filename": "C:\\Users\\neeli\\Desktop\\op",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30eac0384902584b",
+        "type": "s7 in",
+        "z": "6498f90559c51077",
+        "endpoint": "7937646dca7460e7",
+        "mode": "single",
+        "variable": "input pin 0",
+        "diff": true,
+        "name": "blink",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "b220dec3791a97a0",
+                "587c933b1782afaf"
+            ]
+        ]
+    },
+    {
+        "id": "b220dec3791a97a0",
+        "type": "debug",
+        "z": "6498f90559c51077",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "587c933b1782afaf",
+        "type": "postgresql",
+        "z": "6498f90559c51077",
+        "name": "Test",
+        "query": "INSERT INTO sensor_data\nVALUES ('d2', to_timestamp(1688573450));",
+        "postgreSQLConfig": "92bb65d6e6483e5e",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "86280e7806e36414"
+            ]
+        ]
+    },
+    {
+        "id": "86280e7806e36414",
+        "type": "debug",
+        "z": "6498f90559c51077",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "36d7a2e7.38e4de",
+        "type": "inject",
+        "z": "c4032b066ea727b9",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "1b00f74dc3098005"
+            ]
+        ]
+    },
+    {
+        "id": "ee38d447.1c13a8",
+        "type": "debug",
+        "z": "c4032b066ea727b9",
+        "name": "Done",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "complete",
+        "statusType": "msg",
+        "x": 1110,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "12f229bfef5ad2a5",
+        "type": "function",
+        "z": "c4032b066ea727b9",
+        "name": "Ready for next lines",
+        "func": "return [\n    msg.complete || msg.abort ? msg : null,\n    { tick: true },\n];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 220,
+        "wires": [
+            [
+                "ee38d447.1c13a8"
+            ],
+            [
+                "1b00f74dc3098005"
+            ]
+        ]
+    },
+    {
+        "id": "178252a8d3c54b16",
+        "type": "function",
+        "z": "c4032b066ea727b9",
+        "name": "",
+        "func": "let payload = `(0, FALSE),`;\nif (msg.payload && msg.payload.length > 0) {\n    for (const line of msg.payload) {\n        const valid = 'TRUE'; // Call some kind of test\n        payload += `(${line['id']}, ${valid}),`;\n    }\n}\nmsg.payload = payload.slice(0, - 1);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "6d2073ec4db26f2f"
+            ]
+        ]
+    },
+    {
+        "id": "4fd30ba36702842a",
+        "type": "debug",
+        "z": "c4032b066ea727b9",
+        "name": "Progress",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "parts.index",
+        "statusType": "msg",
+        "x": 840,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1b00f74dc3098005",
+        "type": "postgresql",
+        "z": "c4032b066ea727b9",
+        "name": "SELECT many",
+        "query": "SELECT * FROM mytable\nORDER BY id ASC\nLIMIT 2000;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": true,
+        "rowsPerMsg": "100",
+        "outputs": 1,
+        "x": 280,
+        "y": 280,
+        "wires": [
+            [
+                "178252a8d3c54b16"
+            ]
+        ]
+    },
+    {
+        "id": "6d2073ec4db26f2f",
+        "type": "postgresql",
+        "z": "c4032b066ea727b9",
+        "name": "UPDATE many",
+        "query": "UPDATE mytable AS c\nSET validity = v.validity\nFROM (VALUES\n\t{{{ msg.payload }}}\n) AS v (id, validity)\nWHERE v.id = c.id;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "12f229bfef5ad2a5",
+                "4fd30ba36702842a"
+            ]
+        ]
+    },
+    {
+        "id": "64a657de3954a4b5",
+        "type": "debug",
+        "z": "c4032b066ea727b9",
+        "name": "Results",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "pgsql.rowCount",
+        "statusType": "msg",
+        "x": 460,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "adf069475c5e0ba3",
+        "type": "postgresql",
+        "z": "c4032b066ea727b9",
+        "name": "SELECT",
+        "query": "SELECT * FROM mytable\nWHERE id < 100;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "64a657de3954a4b5"
+            ]
+        ]
+    },
+    {
+        "id": "3134bfc0f12e13c3",
+        "type": "inject",
+        "z": "c4032b066ea727b9",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "adf069475c5e0ba3"
+            ]
+        ]
+    },
+    {
+        "id": "d04c65ee97e3a273",
+        "type": "inject",
+        "z": "c4032b066ea727b9",
+        "name": "Prepare",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "82b7c689d6682f72"
+            ]
+        ]
+    },
+    {
+        "id": "c5f0b4b2442e3137",
+        "type": "debug",
+        "z": "c4032b066ea727b9",
+        "name": "Done",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "pgsql",
+        "statusType": "msg",
+        "x": 450,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "82b7c689d6682f72",
+        "type": "postgresql",
+        "z": "c4032b066ea727b9",
+        "name": "ADD COLUMN",
+        "query": "ALTER TABLE mytable\n    DROP COLUMN IF EXISTS validity;\n\nALTER TABLE mytable\n    ADD COLUMN validity BOOLEAN;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "10",
+        "outputs": 1,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "c5f0b4b2442e3137"
+            ]
+        ]
+    }
+]
